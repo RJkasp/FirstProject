@@ -1,0 +1,131 @@
+.mobile-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+   .logo{
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         max-width: 100%;
+         
+         img {
+             justify-self: end;
+             align-self: center;
+             width: 200px;
+             border-radius: 10px 10px 10px 10px;
+             border: 2px solid black;
+             
+            }
+         h2{
+             
+             padding: 10px;
+             text-align: center;
+             justify-self: center;
+             align-self: center;
+            } 
+    }
+
+    #toggle{
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         opacity: 0;
+         z-index: 5;
+         
+     }
+    #toggle:checked ~ #burger-menu{
+         top: 0;
+         opacity: 1;
+         }
+
+    #toggle:hover ~ #burger-menu-container{
+         transform: rotate(-25deg);
+         background: red;
+         border-radius: 50%;
+         }
+
+    #toggle:checked ~ #burger-menu-container{
+         transform: rotate(45deg);
+         }
+
+    #toggle:checked ~ #burger-menu-container #line-1,
+    #toggle:checked ~ #burger-menu-container #line-3{
+         top: 0;
+         transform: rotate(90deg);
+         }
+    #burger-menu-container{
+         display: grid;
+         justify-items: center;
+         align-items: center;
+         width: 50px;
+         height: 40px;
+         z-index: 4;
+         position: relative;
+         left: 30px;
+         top: 20px;
+         transition: all 0.2s linear;
+         
+         .burger-line {
+             width: 30px;
+             height: 3px;
+             background-color: rgb(0, 0, 0);
+             }
+          }
+
+    #burger-menu {
+         transition: all 0.5s ease-in-out;
+         position: absolute;
+         width: 100%;
+         background-color: #2e2e2e;
+         border: 2px solid red;
+         display: grid;
+         justify-items: center;
+         align-items: center;
+         top: -55vh;
+         opacity: 0;
+         left: 0;
+         min-height: 55vh;
+         border-radius: 500px;
+         z-index: 3;
+         overflow: hidden;
+
+        #okotoks{
+             opacity: .1;
+             justify-self: center;
+             align-self: center;
+             position:absolute;
+             max-width: 600px;
+             border-radius: 1000px;
+        }
+
+        a{
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+             font-size: 50px;
+             z-index: 10;
+        }
+    }  
+}
+
+#menu-header{
+     background: black;
+     grid-column: 1/3;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 20px;
+     
+ 
+     h1{
+     text-align: center;
+     grid-column: 1/3;
+     color:red;
+ }   
+ 
+ .menu-tags{
+         text-decoration: none;
+         font-weight: bold;
+         color: white;
+         text-align: center;
+         
+     }
+   }

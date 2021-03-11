@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+
+@import 'header';    
+
+main::-webkit-scrollbar {
+     display: none;
+}
+
+main {
+     
+     margin: 20px;
+     border-radius: 10px;
+     overflow-y: scroll;
+     scrollbar-width: none;
+     -ms-overlay-style: none;
+     padding: 20px;
+     height: 600px;
+        
+        #contact{
+           background: black;
+           border-radius: 10px;
+           padding: 10px;
+           text-align: center;
+           color: red;
+        }
+        #ho{
+           background: black;
+           color: white;
+           
+             
+        }
+     #cc{
+           background: black;
+           padding: 20px;
+           margin: 10px;
+           border-radius: 10px;
+           color: white;
+         a{
+           text-decoration: none;
+           color: red;
+          }
+     }
+     #map{
+         border-radius: 10px;
+         overflow: hidden;
+        }
+}
+ @import 'footer';
+}
