@@ -163,6 +163,12 @@ body #menu-header .menu-tags {
   text-align: center;
 }
 
+@media only screen and (min-width: 540px) {
+  body header h2 {
+    font-size: 2em;
+  }
+}
+
 body main {
   display: -ms-grid;
   display: grid;
@@ -184,6 +190,7 @@ body main .about {
   background: black;
   color: red;
   border-radius: 10px 10px 10px 10px;
+  height: 600px;
 }
 
 body main .about h2 {
@@ -206,32 +213,11 @@ body main .about p {
   color: white;
 }
 
-body main .map-tel {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2 1fr);
-}
-
-body main .map-tel #map {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-body main .map-tel #tel {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
 body footer {
   background: black;
   color: white;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 body footer #map-tel {
@@ -258,14 +244,12 @@ body footer #map-tel #tel {
     margin: 0;
     padding: 0;
   }
-  * header {
-    margin-bottom: 10px;
-  }
-  * .about {
+  .about {
     display: -ms-grid;
     display: grid;
+    margin-top: 10px;
   }
-  * .about #video {
+  #video {
     -ms-grid-column-align: center;
         justify-self: center;
   }

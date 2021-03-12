@@ -8,5 +8,44 @@ body{
 
   @import 'footer';
 }
+@media only screen and (min-width: 700px){
+
+
+  main{
+    height: 600px;
+    
+
+  #item-container{
+   display: grid;
+   grid-template-columns: 1fr, 1fr;
+   place-content: center;
+   gap: 10px;
+  
+   h2{
+     color: red;
+   }
+   
+    #pep{
+      grid-column: 1/2;
+      width: 40vw;
+      height: 46vw;
+      }
+    #vegatarian{
+      grid-column: 2/3;
+      width: 40vw;
+      height: 46vw;
+    }
+    #italian{
+      width: 40vw;
+      height: 46vw;
+
+    }
+    #greek{
+      width: 40vw;
+      height: 46vw;
+    }
+  }
+}
+}
 
 

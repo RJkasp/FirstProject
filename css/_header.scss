@@ -16,12 +16,13 @@
              
             }
          h2{
-             
+          
              padding: 10px;
              text-align: center;
              justify-self: center;
              align-self: center;
             } 
+         
     }
 
     #toggle{
@@ -129,3 +130,10 @@
          
      }
    }
+   @media only screen and (min-width:540px){
+     header{
+        h2{
+           font-size: 2em;
+        }
+     }
+}

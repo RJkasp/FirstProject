@@ -163,6 +163,12 @@ body #menu-header .menu-tags {
   text-align: center;
 }
 
+@media only screen and (min-width: 540px) {
+  body header h2 {
+    font-size: 2em;
+  }
+}
+
 body main::-webkit-scrollbar {
   display: none;
 }
@@ -204,15 +210,14 @@ body #item-container {
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   color: black;
-  padding: 10px;
-  margin: 20px;
 }
 
 body #item-container .items {
   background: black;
   color: white;
+  margin: 20px;
+  padding: 10px;
   border-radius: 10px;
-  width: 70vw;
 }
 
 body #item-container #map-tel {
@@ -240,7 +245,7 @@ body footer {
   background: black;
   color: white;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 body footer #map-tel {
@@ -260,5 +265,40 @@ body footer #map-tel #tel {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+}
+
+@media only screen and (min-width: 700px) {
+  main #item-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+    place-content: center;
+  }
+  main #item-container h2 {
+    color: red;
+  }
+  main #item-container #spirits {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 40vw;
+    height: 50vh;
+  }
+  main #item-container #beer {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    width: 40vw;
+    height: 50vh;
+  }
+  main #item-container #ct {
+    width: 40vw;
+    height: 70vh;
+  }
+  main #item-container #wine {
+    width: 40vw;
+    height: 70vh;
+  }
 }
 /*# sourceMappingURL=drinks.css.map */

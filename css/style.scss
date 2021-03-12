@@ -24,6 +24,7 @@ main {
         background: black;
         color: red;
         border-radius: 10px 10px 10px 10px;
+        height: 600px;
 
     h2{
         justify-self: start;
@@ -42,19 +43,6 @@ main {
        color: white
     }
 }
-    .map-tel{
-      display: grid;
-      grid-template-columns: repeat(2 1fr);
-      
-        #map{
-        grid-column: 1/2;
-      }
-      
-        #tel{
-        grid-column: 2/3;
-        justify-self: end;
-      }
-    }
 }
 @import 'footer';
 }
@@ -63,24 +51,14 @@ main {
   *{
     margin: 0;
     padding: 0;
-  
-    header{
-     margin-bottom: 10px;
-    }
+  }
     .about{
       display: grid;
-      
-      h2{
-      }
-      h1{
-       
-      }
-      #video{
-       justify-self: center;
-      }
-      p{
-       
-      }  
+      margin-top: 10px;
     }
-  }
+    #video{
+      justify-self: center;
+    }
+      
 }
+

@@ -32,16 +32,17 @@ main{
     background-color:white;
     border-radius: 10px 10px 10px 10px;
     color: black;
-    padding: 10px;
-    margin: 20px;
+    
+    // padding: 10px;
+    // margin: 20px;
     
     .items{
        background: black;
        color: white;
-      //  margin: 20px;
-      //  padding: 10px;
+      margin: 20px;
+      padding: 10px;
        border-radius: 10px;
-       width: 70vw;
+      
      }  
      #map-tel{
      display: grid;
