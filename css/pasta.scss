@@ -1,48 +1,8 @@
 body{
-    margin: 0;
-    padding: 0;
 @import 'header';
 
 @import 'menu';
 
 @import 'footer';
 }
-@media only screen and (min-width: 700px){
-   
-  
-  main{
-        height: 600px;
-        
-    
-      #item-container{
-       display: grid;
-       grid-template-columns: 1fr, 1fr;
-       place-content: center;
-       gap: 10px;
 
-       h2{
-           color: red;
-       }
-       
-        #spag{
-          grid-column: 1/2;
-          width: 40vw;
-          height: 50vw;
-          }
-        #penne{
-          grid-column: 2/3;
-          width: 40vw;
-          height: 50vw;
-        }
-        #fet{
-          width: 40vw;
-          height: 40vw;
-    
-        }
-        #tort{
-          width: 40vw;
-          height: 40vw;
-        }
-      }
-    }
-}

@@ -1,49 +1,28 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    
+}
   @import 'header';
 
   @import 'menu';
     
   @import 'footer';
-}
-@media only screen and (min-width: 700px){
+
+@media only screen and (min-width:1366px){
   main{
-    
+
     #item-container{
-     display: grid;
-     grid-template-columns: 1fr, 1fr;
-     place-content: center;
-     
-     
-      h2{
-        color: red;
-      }
-      #spirits{
-        
-        grid-column: 1/2;
-        width: 40vw;
-        height: 50vh;
-      }
-      #beer{
-        
-        grid-column: 2/3;
-        width: 40vw;
-        height: 50vh;
-      }
-      #ct{
-        
-        width: 40vw;
-        height: 70vh;
-      }
-      #wine{
-        
-        width: 40vw;
-        height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 35px;
+    
+      .items{
+        width: 15vw;
+        height: 45vh;
+        #spirits{
+          grid-template-columns: 1/2;
+        }
       }
     }
   }
 }
-
-  

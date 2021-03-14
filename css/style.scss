@@ -17,48 +17,69 @@ main {
         scrollbar-width: none;
         -ms-overlay-style:none;
         overflow-y: scroll;
-        width: 90%;
         justify-self: center;
-        padding-top: 20px;
-        border-radius: 10px 0px 0px 10px;
-        background: black;
+        height: 550px;
         color: red;
-        border-radius: 10px 10px 10px 10px;
-        height: 600px;
-
-    h2{
+        text-align: center;
+        border-top: 2px solid lightgray;
+      h2{
         justify-self: start;
         margin-bottom: 0;
         margin-left: 10px;
-    }
+      }
     
-    h1{
+      h1{
        justify-self: start;
        margin-top: 0;
        margin-left: 10px;
-    }
-    p{
+      }
+      
+      p{
        text-align: center;
        padding: 10px;
-       color: white
+       color: black
+      }
+     
+      #video{
+      border: 5px solid red;
+      }
     }
-}
 }
 @import 'footer';
-}
 
-@media only screen and (min-width: 700px){
-  *{
-    margin: 0;
-    padding: 0;
+
+@media only screen and (min-width: 540px){
+  
+  .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 50px;
+    
+  #title{
+    border-right: 2px solid lightgray;
+    h2{
+      place-self: start;
+    }
   }
-    .about{
-      display: grid;
-      margin-top: 10px;
+  }    
+}
+@media only screen and (min-width:1366px){
+  .about{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    padding: 50px;
+    border-top: 2px solid lightgray;
+    gap: 20px;
+  #title{
+    grid-column: 1/2;
     }
-    #video{
-      justify-self: center;
+  #two{
+    grid-column: 2/3;
+  
     }
-      
+  }
 }
 
+}

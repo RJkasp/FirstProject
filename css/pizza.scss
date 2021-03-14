@@ -8,44 +8,45 @@ body{
 
   @import 'footer';
 }
-@media only screen and (min-width: 700px){
-
-
+#item-container{
+ 
+  .s-image{
+    border-radius: 100%;
+    }
+}
+@media only screen and (min-width:1366px){
   main{
-    height: 600px;
+    margin-left: 45px;
+    place-items: center;
     
-
+    
   #item-container{
-   display: grid;
-   grid-template-columns: 1fr, 1fr;
-   place-content: center;
-   gap: 10px;
-  
-   h2{
-     color: red;
-   }
-   
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    h2{
+    color: red;
+    }
     #pep{
-      grid-column: 1/2;
-      width: 40vw;
-      height: 46vw;
-      }
+      width: 15vw;
+      height: 40vh;
+    }
     #vegatarian{
-      grid-column: 2/3;
-      width: 40vw;
-      height: 46vw;
+      width: 15vw;
+      height: 40vh;
     }
     #italian{
-      width: 40vw;
-      height: 46vw;
-
+      width: 15vw;
+      height: 40vh;
     }
     #greek{
-      width: 40vw;
-      height: 46vw;
+      width: 15vw;
+      height: 40vh;
     }
+
+  }
+   
   }
 }
-}
-
 
